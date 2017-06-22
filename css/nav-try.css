@@ -1,9 +1,16 @@
 nav{
   display: flex;
   justify-content: space-around;
-  background-color: black;
-  color: blue;
+  background-color: blue;
+  color: white;
 }
-nav div:hover{
-  background-color: yellow;
+
+nav > div:hover{
+  background-color: grey;
+}
+
+@media all and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+      }
 }
